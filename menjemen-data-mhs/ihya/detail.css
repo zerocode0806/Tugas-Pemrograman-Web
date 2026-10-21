@@ -1,0 +1,115 @@
+
+.detail {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #17233d;
+}
+
+.detail-head {
+    padding: 25px;
+    border-radius: 14px 14px 0 0;
+    background: linear-gradient(135deg, #315efb, #718cff);
+    color: white;
+}
+
+.detail-head p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.detail-head h1 {
+    margin: 10px 0;
+    overflow-wrap: anywhere;
+}
+
+.detail-head span {
+    opacity: .9;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    margin: 0;
+    padding: 15px 25px;
+    border: 1px solid #e0e6f0;
+    border-radius: 0 0 14px 14px;
+    background: white;
+    box-shadow: 0 8px 25px #17233d10;
+}
+
+dt, dd {
+    margin: 0;
+    padding: 14px 10px;
+    border-bottom: 1px solid #e8edf5;
+    overflow-wrap: anywhere;
+}
+
+dt {
+    color: #315efb;
+    font-weight: bold;
+}
+
+dd {
+    line-height: 1.6;
+}
+
+dt:last-of-type,
+dd:last-of-type {
+    border-bottom: 0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid #315efb;
+    border-radius: 8px;
+    background: #315efb;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #2448d8;
+}
+
+.btn-lain {
+    background: white;
+    color: #315efb;
+}
+
+.btn-lain:hover {
+    background: #eef2ff;
+}
+
+@media (max-width: 550px) {
+    .detail {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    dl {
+        grid-template-columns: 1fr;
+        padding: 12px 18px;
+    }
+
+    dt {
+        padding-bottom: 4px;
+        border-bottom: 0;
+    }
+
+    dd {
+        padding-top: 4px;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+    }
+}
