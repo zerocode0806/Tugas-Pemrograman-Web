@@ -1,0 +1,5 @@
+/* Dikerjakan: Agung. Tambahan khusus halaman data. */
+.bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.tabel tbody tr:nth-child(even){background:#FAFCFF}
+.tabel td:first-child{color:var(--sec);width:48px}
+@media (max-width:600px){.col-jurusan{display:none}.tabel th,.tabel td{padding:8px 10px}}
