@@ -1,0 +1,180 @@
+
+/* Pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #111111;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid var(--bd);
+}
+header h1 {
+    padding: 22px 20px 6px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 900px;
+ 
+}
+
+/* Navigasi */
+nav {
+    background-color: #f7f7f7;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #dddddd;
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  font:
+    0.9rem Arial,
+    sans-serif;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #a00000;
+    text-decoration: underline;
+}
+
+/* Konten utama */
+main {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+
+main {
+    padding: 20px 30px;
+}
+
+
+.section-title {
+    background-color: #e8eef7;
+    border-left: 5px solid #315b96;
+    padding: 8px 12px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Daftar istilah */
+.istilah {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nama istilah */
+.istilah dt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 12px;
+    border-left: 3px solid #8b0000;
+}
+
+/* Definisi istilah */
+.istilah dd {
+    margin: 5px 0 25px 25px;
+}
+
+.istilah dd p {
+    margin: 5px 0 10px;
+}
+
+/* Contoh penggunaan */
+.istilah blockquote {
+    margin: 10px 0 0 15px;
+    padding: 8px 15px;
+    background-color: #f5f5f5;
+    border-left: 3px solid #999;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    padding-bottom: 18px;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #dddddd;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Tablet dan layar berukuran sedang */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        gap: 16px;
+        padding-left: 0;
+    }
+
+    main > h2 {
+        font-size: 23px;
+    }
+
+    .istilah h2 {
+        font-size: 22px;
+    }
+
+    .istilah p,
+    .istilah blockquote {
+        margin-left: 10px;
+    }
+}
+
